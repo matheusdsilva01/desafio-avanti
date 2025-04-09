@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Avanti store - Aplicação construída para o desafio técnico do Programa de Estágio Innovation Class Tech.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wdth,wght@6..12,75..125,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Avanti store</title>
+</head>
+<body>
+    <header>
+        <section class="header__promo-banner">
+            <p class="pBold">Ganhe  <span class="header__promo-banner--price">R$10,00</span>  de desconto no seu primeiro pedido. Utilize o cupom <span class="header__promo-banner--cupomcode">DESCONTO10</span></p>
+        </section>
+        
+        <section class="header__content container">
+            <div class="header__content--logo">
+                <img src="assets/logo.svg" alt="Logo Avanti Store"/>
+            </div>
+            <div class="header__content--search-bar">
+                <div>
+                    <input type="text" name="search" id="search" placeholder="Digite aqui o que você procura">
+                    <button type="submit" class="header__content--submit-button">
+                        <img src="assets/search.svg" alt="Submit button"/>
+                    </button>
+                </div>
+            </div>
+            <div class="header__user">
+                <div class="header__user--info">
+                    <img src="assets/user.svg" alt="Placeholder Image"/>
+                    <div class="pSemibold">
+                        <p>Olá</p>
+                        <p>Nome cliente!</p>
+                    </div>
+                </div>
+                <div class="header__user--cart-info">
+                    <img src="assets/cart.svg" alt="Placeholder Image"/>
+                    <span class="header__user--cart-quantity">
+                        2
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="header__nav container">
+            <nav class="header__nav--container">
+                <ul class="header__nav--list">
+                    <li class="header__nav--toggle-categories">
+                        <p class="pBold dropdown">
+                            <svg width="14" height="12" viewBox="0 0 14 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="1" y1="6" x2="13" y2="6" stroke="currentColor"  fill="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="1" y1="11" x2="13" y2="11" stroke="currentColor" fill="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="1" y1="1" x2="13" y2="1" stroke="currentColor" fill="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>Todas as Categorias</p>
+                        <div class="dropdown__content">
+                            <div class="dropdown__wrapper">
+                                <div class="dropdown__departments">
+                                    <button class="department-title department__item department__item--active" data-department="department">
+                                        Departamento
+                                        <img src="/assets/chevron-left.svg" class="department__icon-arrow" alt="Ícone de Flecha" />
+                                    </button>
+                                    <button class="department-title department__item" data-department="department-1">
+                                        Departamento
+                                        <img src="/assets/chevron-left.svg" class="department__icon-arrow" alt="Ícone de Flecha" />
+                                    </button>
+                                    <button class="department-title department__item" data-department="department-2">
+                                        Departamento
+                                        <img src="/assets/chevron-left.svg" class="department__icon-arrow" alt="Ícone de Flecha" />
+                                    </button>
+                                    <button class="department-title department__item" data-department="department-3">
+                                        Departamento
+                                        <img src="/assets/chevron-left.svg" class="department__icon-arrow" alt="Ícone de Flecha" />
+                                    </button>
+                                    <button class="department-title department__item" data-department="department-3">
+                                        Departamento
+                                        <img src="/assets/chevron-left.svg" class="department__icon-arrow" alt="Ícone de Flecha" />
+                                    </button>
+                                    <button class="department-title department__item" data-department="department-3">
+                                        Departamento
+                                        <img src="/assets/chevron-left.svg" class="department__icon-arrow" alt="Ícone de Flecha" />
+                                    </button>
+                                    <button class="department-title department__item" data-department="department-3">
+                                        Departamento
+                                        <img src="/assets/chevron-left.svg" class="department__icon-arrow" alt="Ícone de Flecha" />
+                                    </button>
+                                    <button class="department-title department__item" data-department="department-3">
+                                        Departamento
+                                        <img src="/assets/chevron-left.svg" class="department__icon-arrow" alt="Ícone de Flecha" />
+                                    </button>
+                                    <button class="department-title department__item" data-department="department-3">
+                                        Departamento
+                                        <img src="/assets/chevron-left.svg" class="department__icon-arrow" alt="Ícone de Flecha" />
+                                    </button>
+                                    <button class="department-title department__item" data-department="department-3">
+                                        Departamento
+                                        <img src="/assets/chevron-left.svg" class="department__icon-arrow" alt="Ícone de Flecha" />
+                                    </button>
+                                    <button class="department-title department__item" data-department="department-3">
+                                        Departamento
+                                        <img src="/assets/chevron-left.svg" class="department__icon-arrow" alt="Ícone de Flecha" />
+                                    </button>
+                                </div>
+                                <div class="dropdown__categories-list dropdown__categories-list--active" data-department="department">
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                </div>
+                                <div class="dropdown__categories-list" data-department="department-2">
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                </div>
+                                <div class="dropdown__categories-list" data-department="department-3">
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__nav--item">
+                        <p class="dropdown pRegular">Departamento</p>
+                        <div class="dropdown__content">
+                            <h4 class="h4Bold">Departamento</h4>
+                                <div class="dropdown__categories-list">
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                </div>
+                        </div>
+                    </li>
+                    <li class="header__nav--item">
+                        <p class="dropdown pRegular">Departamento</p>
+
+                        <div class="dropdown__content">
+                            <h4 class="h4Bold">Departamento</h4>
+                                <div class="dropdown__categories-list">
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                </div>
+                        </div>
+                    </li>
+                    <li class="header__nav--item">
+                        <p class="dropdown pRegular">Departamento</p>
+
+                        <div class="dropdown__content">
+                            <h4 class="h4Bold">Departamento</h4>
+                                <div class="dropdown__categories-list">
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                </div>
+                        </div>
+                    </li>
+                    <li class="header__nav--item">
+                        <p class="dropdown pRegular">Departamento</p>
+
+                        <div class="dropdown__content">
+                            <h4 class="h4Bold">Departamento</h4>
+                                <div class="dropdown__categories-list">
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                </div>
+                        </div>
+                    </li>
+                    <li class="header__nav--item">
+                        <p class="dropdown pRegular">Departamento</p>
+
+                        <div class="dropdown__content">
+                            <h4 class="h4Bold">Departamento</h4>
+                                <div class="dropdown__categories-list">
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                </div>
+                        </div>
+                    </li>
+                    <li class="header__nav--item">
+                        <p class="dropdown pRegular">Departamento</p>
+
+                        <div class="dropdown__content">
+                            <h4 class="h4Bold">Departamento</h4>
+                                <div class="dropdown__categories-list">
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                </div>
+                        </div>
+                    </li>
+                    <li class="header__nav--item">
+                        <p class="dropdown pRegular">Departamento</p>
+
+                        <div class="dropdown__content">
+                            <h4 class="h4Bold">Departamento</h4>
+                                <div class="dropdown__categories-list">
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                    <h3 class="dropdown__item">Categoria</h3>
+                                </div>
+                        </div>
+                    </li>
+                    <li class="header__nav--item">
+                        <p class="dropdown pRegular">Departamento</p>
+
+                        <div class="dropdown__content">
+                            <h4 class="h4Bold">Departamento</h4>
+                            <div class="dropdown__categories-list">
+                                <h3 class="dropdown__item">Categoria</h3>
+                                <h3 class="dropdown__item">Categoria</h3>
+                                <h3 class="dropdown__item">Categoria</h3>
+                                <h3 class="dropdown__item">Categoria</h3>
+                                <h3 class="dropdown__item">Categoria</h3>
+                                <h3 class="dropdown__item">Categoria</h3>
+                                <h3 class="dropdown__item">Categoria</h3>
+                                <h3 class="dropdown__item">Categoria</h3>
+                                <h3 class="dropdown__item">Categoria</h3>
+                                <h3 class="dropdown__item">Categoria</h3>
+                                <h3 class="dropdown__item">Categoria</h3>
+                                <h3 class="dropdown__item">Categoria</h3>
+                                <h3 class="dropdown__item">Categoria</h3>
+                                <h3 class="dropdown__item">Categoria</h3>
+                                <h3 class="dropdown__item">Categoria</h3>
+                                <h3 class="dropdown__item">Categoria</h3>
+                                <h3 class="dropdown__item">Categoria</h3>
+                                <h3 class="dropdown__item">Categoria</h3>
+                                <h3 class="dropdown__item">Categoria</h3>
+                                <h3 class="dropdown__item">Categoria</h3>
+                                <h3 class="dropdown__item">Categoria</h3>
+                                <h3 class="dropdown__item">Categoria</h3>
+                                <h3 class="dropdown__item">Categoria</h3>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="banner-offer">
+            <img class="banner-offer__img" src="assets/promo-banner.png" alt="banner offer image" />
+        </section>
+        <section class="carousel__wrapper container">
+            <div class="carousel__header">
+                <h2 class="h2BoldTitle">Lançamentos</h2>
+                <p class="pBold">Ver mais</p>
+            </div>
+
+            <div class="carousel__content">
+                <div class="carousel__items">
+                    <div class="card__product">
+                        <span class="card__product--label spanLabel">NOVO</span>
+                        <img src="assets/product-cover.png" alt="product image example" />
+                        <div class="card__product--info">
+                            <h3 class="h3Normal">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="card__product--price">
+                                <div>
+                                    <p class="price-old spanStrikethrough">R$ 100,00</p>
+                                    <p class="price h4Bold">R$ 79,90</p>
+                                </div>
+                                <span class="card__product--price-discount">
+                                    10% OFF
+                                </span>
+                            </div>
+                            <p class="card__product--additional-info">Ou em até <span>10x de R$ 7,90</span></p>
+                            <button class="card__product--add-to-cart">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card__product">
+                        <span class="card__product--label spanLabel">NOVO</span>
+                        <img src="assets/product-cover.png" alt="product image example" />
+                        <div class="card__product--info">
+                            <h3 class="h3Normal">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="card__product--price">
+                                <div>
+                                    <p class="price-old spanStrikethrough">R$ 100,00</p>
+                                    <p class="price h4Bold">R$ 79,90</p>
+                                </div>
+                                <span class="card__product--price-discount">
+                                    10% OFF
+                                </span>
+                            </div>
+                            <p class="card__product--additional-info">Ou em até <span>10x de R$ 7,90</span></p>
+                            <button class="card__product--add-to-cart">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card__product">
+                        <span class="card__product--label spanLabel">NOVO</span>
+                        <img src="assets/product-cover.png" alt="product image example" />
+                        <div class="card__product--info">
+                            <h3 class="h3Normal">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="card__product--price">
+                                <div>
+                                    <p class="price-old spanStrikethrough">R$ 100,00</p>
+                                    <p class="price h4Bold">R$ 79,90</p>
+                                </div>
+                                <span class="card__product--price-discount">
+                                    10% OFF
+                                </span>
+                            </div>
+                            <p class="card__product--additional-info">Ou em até <span>10x de R$ 7,90</span></p>
+                            <button class="card__product--add-to-cart">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card__product">
+                        <span class="card__product--label spanLabel">NOVO</span>
+                        <img src="assets/product-cover.png" alt="product image example" />
+                        <div class="card__product--info">
+                            <h3 class="h3Normal">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="card__product--price">
+                                <div>
+                                    <p class="price-old spanStrikethrough">R$ 100,00</p>
+                                    <p class="price h4Bold">R$ 79,90</p>
+                                </div>
+                                <span class="card__product--price-discount">
+                                    10% OFF
+                                </span>
+                            </div>
+                            <p class="card__product--additional-info">Ou em até <span>10x de R$ 7,90</span></p>
+                            <button class="card__product--add-to-cart">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card__product">
+                        <span class="card__product--label spanLabel">NOVO</span>
+                        <img src="assets/product-cover.png" alt="product image example" />
+                        <div class="card__product--info">
+                            <h3 class="h3Normal">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="card__product--price">
+                                <div>
+                                    <p class="price-old spanStrikethrough">R$ 100,00</p>
+                                    <p class="price h4Bold">R$ 79,90</p>
+                                </div>
+                                <span class="card__product--price-discount">
+                                    10% OFF
+                                </span>
+                            </div>
+                            <p class="card__product--additional-info">Ou em até <span>10x de R$ 7,90</span></p>
+                            <button class="card__product--add-to-cart">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card__product">
+                        <span class="card__product--label spanLabel">NOVO</span>
+                        <img src="assets/product-cover.png" alt="product image example" />
+                        <div class="card__product--info">
+                            <h3 class="h3Normal">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="card__product--price">
+                                <div>
+                                    <p class="price-old spanStrikethrough">R$ 100,00</p>
+                                    <p class="price h4Bold">R$ 79,90</p>
+                                </div>
+                                <span class="card__product--price-discount">
+                                    10% OFF
+                                </span>
+                            </div>
+                            <p class="card__product--additional-info">Ou em até <span>10x de R$ 7,90</span></p>
+                            <button class="card__product--add-to-cart">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card__product">
+                        <span class="card__product--label spanLabel">NOVO</span>
+                        <img src="assets/product-cover.png" alt="product image example" />
+                        <div class="card__product--info">
+                            <h3 class="h3Normal">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="card__product--price">
+                                <div>
+                                    <p class="price-old spanStrikethrough">R$ 100,00</p>
+                                    <p class="price h4Bold">R$ 79,90</p>
+                                </div>
+                                <span class="card__product--price-discount">
+                                    10% OFF
+                                </span>
+                            </div>
+                            <p class="card__product--additional-info">Ou em até <span>10x de R$ 7,90</span></p>
+                            <button class="card__product--add-to-cart">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card__product">
+                        <span class="card__product--label spanLabel">NOVO</span>
+                        <img src="assets/product-cover.png" alt="product image example" />
+                        <div class="card__product--info">
+                            <h3 class="h3Normal">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="card__product--price">
+                                <div>
+                                    <p class="price-old spanStrikethrough">R$ 100,00</p>
+                                    <p class="price h4Bold">R$ 79,90</p>
+                                </div>
+                                <span class="card__product--price-discount">
+                                    10% OFF
+                                </span>
+                            </div>
+                            <p class="card__product--additional-info">Ou em até <span>10x de R$ 7,90</span></p>
+                            <button class="card__product--add-to-cart">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card__product">
+                        <span class="card__product--label spanLabel">NOVO</span>
+                        <img src="assets/product-cover.png" alt="product image example" />
+                        <div class="card__product--info">
+                            <h3 class="h3Normal">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="card__product--price">
+                                <div>
+                                    <p class="price-old spanStrikethrough">R$ 100,00</p>
+                                    <p class="price h4Bold">R$ 79,90</p>
+                                </div>
+                                <span class="card__product--price-discount">
+                                    10% OFF
+                                </span>
+                            </div>
+                            <p class="card__product--additional-info">Ou em até <span>10x de R$ 7,90</span></p>
+                            <button class="card__product--add-to-cart">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card__product">
+                        <span class="card__product--label spanLabel">NOVO</span>
+                        <img src="assets/product-cover.png" alt="product image example" />
+                        <div class="card__product--info">
+                            <h3 class="h3Normal">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="card__product--price">
+                                <div>
+                                    <p class="price-old spanStrikethrough">R$ 100,00</p>
+                                    <p class="price h4Bold">R$ 79,90</p>
+                                </div>
+                                <span class="card__product--price-discount">
+                                    10% OFF
+                                </span>
+                            </div>
+                            <p class="card__product--additional-info">Ou em até <span>10x de R$ 7,90</span></p>
+                            <button class="card__product--add-to-cart">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card__product">
+                        <span class="card__product--label spanLabel">NOVO</span>
+                        <img src="assets/product-cover.png" alt="product image example" />
+                        <div class="card__product--info">
+                            <h3 class="h3Normal">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="card__product--price">
+                                <div>
+                                    <p class="price-old spanStrikethrough">R$ 100,00</p>
+                                    <p class="price h4Bold">R$ 79,90</p>
+                                </div>
+                                <span class="card__product--price-discount">
+                                    10% OFF
+                                </span>
+                            </div>
+                            <p class="card__product--additional-info">Ou em até <span>10x de R$ 7,90</span></p>
+                            <button class="card__product--add-to-cart">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card__product">
+                        <span class="card__product--label spanLabel">NOVO</span>
+                        <img src="assets/product-cover.png" alt="product image example" />
+                        <div class="card__product--info">
+                            <h3 class="h3Normal">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="card__product--price">
+                                <div>
+                                    <p class="price-old spanStrikethrough">R$ 100,00</p>
+                                    <p class="price h4Bold">R$ 79,90</p>
+                                </div>
+                                <span class="card__product--price-discount">
+                                    10% OFF
+                                </span>
+                            </div>
+                            <p class="card__product--additional-info">Ou em até <span>10x de R$ 7,90</span></p>
+                            <button class="card__product--add-to-cart">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel__arrow carousel__arrow--left">
+                    <img src="assets/arrow-left.svg" alt="Icon arrow left" />
+                </button>
+                <button class="carousel__arrow carousel__arrow--right">
+                    <img src="assets/arrow-left.svg" alt="Icon chevron right" />
+                </button>
+            </div>
+            <div class="carousel__indicators">
+                <span class="carousel__indicator carousel__indicator--active" data-index="0"></span>
+                <span class="carousel__indicator" data-index="1"></span>
+                <span class="carousel__indicator" data-index="2"></span>
+            </div>
+        </section>
+        <section class="banner">
+            <div class="banner__content">
+                <img src="assets/first-banner.png" alt="Banner caneca personalizada" class="img-banner" />
+                <div class="banner__content--text-banner">
+                    <h2 class="h2BoldBanner">LOREM IPSUM</h2>
+                    <p class="pDescriptionBanner">Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.</p>
+                    <p class="pDescriptionBanner">Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.</p>
+                </div>
+            </div>
+            <div class="filled-banner__container">
+                <div class="banner__content">
+                    <div class="filled-banner__column-points">
+                        <h2 class="h2BoldBanner">LOREM IPSUM</h2>
+                        <div class="filled-banner__column-points--text-point">
+                            <img src="assets/point.svg" alt="point icon" />
+                            <p class="pDescriptionBanner">Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                        </div>
+                        <div class="filled-banner__column-points--text-point">
+                            <img src="assets/point.svg" alt="point icon" />
+                            <p class="pDescriptionBanner">Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                        </div>
+                        <div class="filled-banner__column-points--text-point">
+                            <img src="assets/point.svg" alt="point icon" />
+                            <p class="pDescriptionBanner">Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                        </div>
+                    </div>
+                    <img src="assets/second-banner.png" alt="Banner caneca personalizada" />
+                </div>
+            </div>
+            <div class="banner__content">
+                <img src="assets/first-banner.png" alt="Banner caneca personalizada" class="img-banner" />
+                <div class="banner__content--text-banner">
+                    <h2 class="h2BoldBanner">LOREM IPSUM</h2>
+                    <p class="pDescriptionBanner">Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.</p>
+                    <p class="pDescriptionBanner">Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.</p>
+                </div>
+            </div>
+        </section>
+        <section class="carousel__wrapper container">
+            <div class="carousel__header">
+                <h2 class="h2BoldTitle">Lançamentos</h2>
+                <p class="pBold">Ver mais</p>
+            </div>
+
+            <div class="carousel__content">
+                <div class="carousel__items">
+                    <div class="card__product">
+                        <span class="card__product--label spanLabel">NOVO</span>
+                        <img src="assets/product-cover.png" alt="product image example" />
+                        <div class="card__product--info">
+                            <h3 class="h3Normal">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="card__product--price">
+                                <div>
+                                    <p class="price-old spanStrikethrough">R$ 100,00</p>
+                                    <p class="price h4Bold">R$ 79,90</p>
+                                </div>
+                                <span class="card__product--price-discount">
+                                    10% OFF
+                                </span>
+                            </div>
+                            <p class="card__product--additional-info">Ou em até <span>10x de R$ 7,90</span></p>
+                            <button class="card__product--add-to-cart">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card__product">
+                        <span class="card__product--label spanLabel">NOVO</span>
+                        <img src="assets/product-cover.png" alt="product image example" />
+                        <div class="card__product--info">
+                            <h3 class="h3Normal">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="card__product--price">
+                                <div>
+                                    <p class="price-old spanStrikethrough">R$ 100,00</p>
+                                    <p class="price h4Bold">R$ 79,90</p>
+                                </div>
+                                <span class="card__product--price-discount">
+                                    10% OFF
+                                </span>
+                            </div>
+                            <p class="card__product--additional-info">Ou em até <span>10x de R$ 7,90</span></p>
+                            <button class="card__product--add-to-cart">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card__product">
+                        <span class="card__product--label spanLabel">NOVO</span>
+                        <img src="assets/product-cover.png" alt="product image example" />
+                        <div class="card__product--info">
+                            <h3 class="h3Normal">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="card__product--price">
+                                <div>
+                                    <p class="price-old spanStrikethrough">R$ 100,00</p>
+                                    <p class="price h4Bold">R$ 79,90</p>
+                                </div>
+                                <span class="card__product--price-discount">
+                                    10% OFF
+                                </span>
+                            </div>
+                            <p class="card__product--additional-info">Ou em até <span>10x de R$ 7,90</span></p>
+                            <button class="card__product--add-to-cart">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card__product">
+                        <span class="card__product--label spanLabel">NOVO</span>
+                        <img src="assets/product-cover.png" alt="product image example" />
+                        <div class="card__product--info">
+                            <h3 class="h3Normal">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="card__product--price">
+                                <div>
+                                    <p class="price-old spanStrikethrough">R$ 100,00</p>
+                                    <p class="price h4Bold">R$ 79,90</p>
+                                </div>
+                                <span class="card__product--price-discount">
+                                    10% OFF
+                                </span>
+                            </div>
+                            <p class="card__product--additional-info">Ou em até <span>10x de R$ 7,90</span></p>
+                            <button class="card__product--add-to-cart">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card__product">
+                        <span class="card__product--label spanLabel">NOVO</span>
+                        <img src="assets/product-cover.png" alt="product image example" />
+                        <div class="card__product--info">
+                            <h3 class="h3Normal">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="card__product--price">
+                                <div>
+                                    <p class="price-old spanStrikethrough">R$ 100,00</p>
+                                    <p class="price h4Bold">R$ 79,90</p>
+                                </div>
+                                <span class="card__product--price-discount">
+                                    10% OFF
+                                </span>
+                            </div>
+                            <p class="card__product--additional-info">Ou em até <span>10x de R$ 7,90</span></p>
+                            <button class="card__product--add-to-cart">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card__product">
+                        <span class="card__product--label spanLabel">NOVO</span>
+                        <img src="assets/product-cover.png" alt="product image example" />
+                        <div class="card__product--info">
+                            <h3 class="h3Normal">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="card__product--price">
+                                <div>
+                                    <p class="price-old spanStrikethrough">R$ 100,00</p>
+                                    <p class="price h4Bold">R$ 79,90</p>
+                                </div>
+                                <span class="card__product--price-discount">
+                                    10% OFF
+                                </span>
+                            </div>
+                            <p class="card__product--additional-info">Ou em até <span>10x de R$ 7,90</span></p>
+                            <button class="card__product--add-to-cart">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card__product">
+                        <span class="card__product--label spanLabel">NOVO</span>
+                        <img src="assets/product-cover.png" alt="product image example" />
+                        <div class="card__product--info">
+                            <h3 class="h3Normal">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="card__product--price">
+                                <div>
+                                    <p class="price-old spanStrikethrough">R$ 100,00</p>
+                                    <p class="price h4Bold">R$ 79,90</p>
+                                </div>
+                                <span class="card__product--price-discount">
+                                    10% OFF
+                                </span>
+                            </div>
+                            <p class="card__product--additional-info">Ou em até <span>10x de R$ 7,90</span></p>
+                            <button class="card__product--add-to-cart">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card__product">
+                        <span class="card__product--label spanLabel">NOVO</span>
+                        <img src="assets/product-cover.png" alt="product image example" />
+                        <div class="card__product--info">
+                            <h3 class="h3Normal">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="card__product--price">
+                                <div>
+                                    <p class="price-old spanStrikethrough">R$ 100,00</p>
+                                    <p class="price h4Bold">R$ 79,90</p>
+                                </div>
+                                <span class="card__product--price-discount">
+                                    10% OFF
+                                </span>
+                            </div>
+                            <p class="card__product--additional-info">Ou em até <span>10x de R$ 7,90</span></p>
+                            <button class="card__product--add-to-cart">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card__product">
+                        <span class="card__product--label spanLabel">NOVO</span>
+                        <img src="assets/product-cover.png" alt="product image example" />
+                        <div class="card__product--info">
+                            <h3 class="h3Normal">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="card__product--price">
+                                <div>
+                                    <p class="price-old spanStrikethrough">R$ 100,00</p>
+                                    <p class="price h4Bold">R$ 79,90</p>
+                                </div>
+                                <span class="card__product--price-discount">
+                                    10% OFF
+                                </span>
+                            </div>
+                            <p class="card__product--additional-info">Ou em até <span>10x de R$ 7,90</span></p>
+                            <button class="card__product--add-to-cart">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card__product">
+                        <span class="card__product--label spanLabel">NOVO</span>
+                        <img src="assets/product-cover.png" alt="product image example" />
+                        <div class="card__product--info">
+                            <h3 class="h3Normal">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="card__product--price">
+                                <div>
+                                    <p class="price-old spanStrikethrough">R$ 100,00</p>
+                                    <p class="price h4Bold">R$ 79,90</p>
+                                </div>
+                                <span class="card__product--price-discount">
+                                    10% OFF
+                                </span>
+                            </div>
+                            <p class="card__product--additional-info">Ou em até <span>10x de R$ 7,90</span></p>
+                            <button class="card__product--add-to-cart">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card__product">
+                        <span class="card__product--label spanLabel">NOVO</span>
+                        <img src="assets/product-cover.png" alt="product image example" />
+                        <div class="card__product--info">
+                            <h3 class="h3Normal">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="card__product--price">
+                                <div>
+                                    <p class="price-old spanStrikethrough">R$ 100,00</p>
+                                    <p class="price h4Bold">R$ 79,90</p>
+                                </div>
+                                <span class="card__product--price-discount">
+                                    10% OFF
+                                </span>
+                            </div>
+                            <p class="card__product--additional-info">Ou em até <span>10x de R$ 7,90</span></p>
+                            <button class="card__product--add-to-cart">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card__product">
+                        <span class="card__product--label spanLabel">NOVO</span>
+                        <img src="assets/product-cover.png" alt="product image example" />
+                        <div class="card__product--info">
+                            <h3 class="h3Normal">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                            <div class="card__product--price">
+                                <div>
+                                    <p class="price-old spanStrikethrough">R$ 100,00</p>
+                                    <p class="price h4Bold">R$ 79,90</p>
+                                </div>
+                                <span class="card__product--price-discount">
+                                    10% OFF
+                                </span>
+                            </div>
+                            <p class="card__product--additional-info">Ou em até <span>10x de R$ 7,90</span></p>
+                            <button class="card__product--add-to-cart">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel__arrow carousel__arrow--left">
+                    <img src="assets/arrow-left.svg" alt="Icon arrow left" />
+                </button>
+                <button class="carousel__arrow carousel__arrow--right">
+                    <img src="assets/arrow-left.svg" alt="Icon chevron right" />
+                </button>
+            </div>
+            <div class="carousel__indicators">
+                <span class="carousel__indicator carousel__indicator--active" data-index="0"></span>
+                <span class="carousel__indicator" data-index="1"></span>
+                <span class="carousel__indicator" data-index="2"></span>
+            </div>
+        </section>
+        <section class="contact">
+            <img class="contact__img" src="assets/cover-contact.png" alt="Imagem do escritório da Avanti" />
+            <div class="contact__img--blur"></div>
+            <div class="contact__info">
+                <h2 class="h2Contact">Entre em contato conosco e verifique a disponibilidade para sua região!</h2>
+            </div>
+        </section>
+        <section class="newsletter container">
+            <h2 class="newsletter__title">Cadastre-se na nossa <span>newsletter</span></h2>
+            <form action="#" class="newsletter__form">
+                <input class="newsletter__form--input" type="text" placeholder="Digite seu nome">
+                <input class="newsletter__form--input" type="text" placeholder="Digite seu e-mail">
+                <label class="newsletter__form--checkbox">
+                    <input type="checkbox" />
+                    Estou de acordo com a <a href="#">Política de Privacidade</a>
+                </label>
+                <button class="newsletter__form--button" type="submit">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section class="footer__content">
+            <div class="container footer__links">
+                <div>
+                    <img src="assets/logo.svg" alt="Avanti logo" />
+                    <div class="footer__social-medias">
+                        <img src="assets/instagram-logo.svg" alt="Instagram logo" />
+                        <img src="assets/facebook-logo.svg" alt="Facebook logo" />
+                        <img src="assets/youtube-logo.svg" alt="Youtube Logo" />
+                        <img src="assets/tiktok-logo.svg" alt="TikTok logo" />
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer__column--title h4-footer-title">Institucional</h4>
+                    <ul class="footer__column">
+                        <li class="h5-footer-item">
+                            <h5>Sobre nós</h5>
+                        </li>
+                        <li class="h5-footer-item">
+                            <h5>Trabalhe conosco</h5>
+                        </li>
+                        <li class="h5-footer-item">
+                            <h5>Política de privacidade</h5>
+                        </li>
+                        <li class="h5-footer-item">
+                            <h5>Termos de uso</h5>
+                        </li>
+                        <li class="h5-footer-item">
+                            <h5>Fale conosco</h5>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__column--title h4-footer-title">Central de ajuda</h4>
+                    <ul class="footer__column">
+                        <li class="h5-footer-item">
+                            <h5>Fale Conosco</h5>
+                        </li>
+                        <li class="h5-footer-item">
+                            <h5>Frete e Entrega</h5>
+                        </li>
+                        <li class="h5-footer-item">
+                            <h5>Trocas e Devoluções</h5>
+                        </li>
+                        <li class="h5-footer-item">
+                            <h5>Formas de Pagamento</h5>
+                        </li>
+                        <li class="h5-footer-item">
+                            <h5>FAQ</h5>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__column--title h4-footer-title">Atendimento</h4>
+                    <ul class="footer__column">
+                        <li class="h5-footer-item">
+                            <h5><span class="strong-footer-item">Telefone:</span> (00) 1234-5678</h5>
+                        </li>
+                        <li class="h5-footer-item">
+                            <h5><span class="strong-footer-item">Email:</span> exemplo@exemplo.com</h5>
+                        </li>
+                        <li class="h5-footer-item strong-footer-item">
+                            <h5>Horário de atendimento:</h5>
+                        </li>
+                        <li class="h5-footer-item h5-footer-item-small">
+                            <h5>Segunda a Sábado: 07h00 às 23h00</h5>
+                        </li>
+                        <li class="h5-footer-item h5-footer-item-small">
+                            <h5>Domingos e Feriados: 07h00 às 21h00</h5>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__payments-methods container">
+                <img src="assets/payments-methods/amex.svg" alt="Logo Amex" />
+                <img src="assets/payments-methods/mastercard.svg" alt="Logo Mastercard" />
+                <img src="assets/payments-methods/visa.svg" alt="Logo Visa" />
+                <img src="assets/payments-methods/hipercard.svg" alt="Logo Hipercard" />
+                <img src="assets/payments-methods/elo.svg" alt="Logo Elo" />
+                <img src="assets/payments-methods/uniao.svg" alt="Logo união" />
+                <img src="assets/payments-methods/paypal.svg" alt="Logo Paypal" />
+                <img src="assets/payments-methods/pix.svg" alt="Logo Pix" />
+                <img src="assets/payments-methods/boleto.svg" alt="Logo Boleto" />
+            </div>
+        </section>
+        <section class="footer__copyright">
+            <p class="copyrightParagraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+            <section class="footer__partners">
+                <img src="assets/letsencrypt.png" alt="Logo Lets Encrypt" />
+                <img src="assets/vtex-pci-200.png" alt="Logo VTEX PCI" />
+                <span class="footer__divider"></span>
+                <img src="assets/avanti.png" alt="Logo Avanti" />
+                <img src="assets/VTEX_Logo.png" alt="Logo VTEX" />
+            </section>
+        </section>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

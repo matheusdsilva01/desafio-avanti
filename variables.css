@@ -1,0 +1,162 @@
+:root {
+    --text-color: #333;
+    --font-nunito: "Nunito" , sans-serif;
+    --font-nunito-sans: "Nunito sans", sans-serif;
+
+    --dark-grey: #656565;
+    --darkest-grey: #303030;
+    --light-grey: #f5f5f5;
+    --medium-grey: #DDDDDD;
+    --black: #000000;
+    --blue: #005CFF;
+    --white: #FFFFFF;
+    --dark-blue: #00264E;
+    --cyan: #5EC0BE;
+    --night-grey: #4F4F4F;
+    --alt-grey: #838383;
+    --secondary-white: #DEDEDE;
+    --alt-black: #303030;
+    --purple: #6220C1;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.department-title {
+    font-family: var(--font-nunito-sans);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.pBold {
+    font-family: var(--font-nunito-sans);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.pSemibold {
+    color: var(--black);
+    font-family: var(--font-nunito-sans);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.pRegular {
+    color: var(--black);
+    font-family: var(--font-nunito-sans);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.h2BoldBanner {
+    color: var(--black);
+    font-family: var(--font-nunito);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 42px */
+    letter-spacing: 1.2px;
+}
+
+.pDescriptionBanner {
+    color: var(--black);
+    font-family: var(--font-nunito);
+    font-size: 18px;
+    line-height: 140%; /* 25.2px */
+    letter-spacing: 0.9px;
+}
+
+.h3Normal {
+    font-family: var(--font-nunito-sans);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.spanStrikethrough {
+    color: var(--darkest-grey);
+    font-family: var(--font-nunito-sans);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration-line: line-through;
+    text-transform: capitalize;
+}
+
+.h2Contact {
+    font-family: var(--font-nunito);
+    color: var(--white);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 140%; /* 42px */
+}
+
+.h4Bold {
+    color: var(--black);
+    font-family: var(--font-nunito-sans);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.h2BoldTitle {
+    color: var(--black);
+    font-family: var(--font-nunito-sans);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.spanLabel {
+    color: var(--white);
+    font-family: var(--font-nunito-sans);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 10px;
+    text-transform: uppercase;
+}
+
+.newsletter__title {
+    color: var(--black);
+    font-family: var(--font-nunito-sans);
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.h4-footer-title {
+    color: var(--black);
+    font-family: var(--font-nunito-sans);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.h5-footer-item {
+    color: var(--darkest-grey);
+    font-family: var(--font-nunito-sans);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.strong-footer-item {
+    color: var(--black);
+}
+
+.h5-footer-item-small {
+    font-size: 12px;
+}
+
+.copyrightParagraph {
+    color: var(--darkest-grey);
+    font-family: var(--font-nunito-sans);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
