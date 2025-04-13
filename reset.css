@@ -5,6 +5,19 @@
     padding: 0;
 }
 
+html, body {
+    font-family: var(--font-nunito-sans), sans-serif;
+    background-color: var(--white);
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
+}
+
 ul, li, ol {
     list-style: none;
 }
@@ -20,15 +33,6 @@ button {
     border: none;
 }
 
-html, body {
-    font-family: var(--font-nunito-sans), sans-serif;
-    background-color: var(--white);
-    scroll-behavior: smooth;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100,
-        "YTLC" 500;
+summary {
+    list-style: none;
 }

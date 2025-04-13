@@ -24,34 +24,89 @@ departments.forEach(department => {
     })
 })
 
+function updateFooterColumnState() {
+    const columnsFooter = document.querySelectorAll('.footer__column');
+    if (window.innerWidth <= 640) {
+        columnsFooter.forEach(column => {
+            column.open = false;
+        })
+    } else {
+        columnsFooter.forEach(column => {
+            column.open = true;
+        })
+    }
+}
+
 const carousel = document.querySelectorAll('.carousel__items');
 const carouselNextBtn = document.querySelectorAll('.carousel__arrow--right');
 
 
-const carouselIndex = window.innerWidth < 1024 ? 6 : 3;
-
+var carouselIndex = Math.ceil(carousel[0].scrollWidth / carousel[0].clientWidth)
 var currentIndex = 0;
 
-const carouselDots = document.querySelectorAll('.carousel__indicator');
-
 function carouselScroll() {
-    carouselDots.forEach(dot => {
-        const index = dot.dataset.index;
-        if (index != currentIndex) {
-            dot.classList.remove('carousel__indicator--active');
-        } else {
-            dot.classList.add('carousel__indicator--active');
-        }
-    })
     carousel.forEach(item => {
         const itemScrollPosition = item.scrollWidth * currentIndex / carouselIndex;
-
         item.scrollTo({
             left: itemScrollPosition,
             behavior: 'smooth'
         });
+        
     });
 }
+
+updateFooterColumnState()
+window.addEventListener('resize', () => {
+    updateFooterColumnState()
+    const carouselWrapper = document.querySelectorAll('.carousel__items');
+    currentIndex = 0;
+    carouselIndex = Math.ceil((carouselWrapper[0].scrollWidth / carouselWrapper[0].clientWidth) / 2);
+    const dotsWrapper = document.querySelectorAll('.carousel__indicators');
+    dotsWrapper.forEach(dot => {
+        dot.innerHTML = '';
+    })
+    setCarouselDots();
+})
+
+function createCarouselDot(index, dotsContainer) {
+    const dot = document.createElement('span');
+    dot.classList.add('carousel__indicator');
+    dotsContainer.appendChild(dot);
+    if (index === currentIndex) {
+        dot.classList.add('carousel__indicator--active');
+    }
+    dot.dataset.index = index;
+}
+
+function setCarouselDots() {
+    const dotsContainer = document.querySelectorAll('.carousel__indicators');
+    dotsContainer.forEach(dot => {
+        dot.innerHTML = '';
+    })
+    for (let i = 0; i < carouselIndex; i++) {
+        createCarouselDot(i, dotsContainer[0]);
+        createCarouselDot(i, dotsContainer[1]);
+    }
+}
+setCarouselDots();
+
+carousel.forEach(item => {
+    item.addEventListener('scroll', (event) => {
+    const carouselDots = document.querySelectorAll('.carousel__indicator');
+    const item = event.currentTarget
+    const currentIndexScrollPosition = Math.ceil(item.scrollLeft / item.clientWidth);
+
+        carouselDots.forEach(dot => {
+            const index = dot.dataset.index;
+            if (index == currentIndexScrollPosition) {
+                dot.classList.add('carousel__indicator--active');
+            } else {
+                dot.classList.remove('carousel__indicator--active');
+            }
+        })
+    })
+});
+
 
 carouselNextBtn.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -75,10 +130,14 @@ carouselPrevBtn.forEach(btn => {
     });
 });
 
-carouselDots.forEach(dot => {
-    const index = dot.dataset.index;
-    dot.addEventListener('click', () => {
-        currentIndex = Number(index)
-        carouselScroll();
+const indicatorsWrapper = document.querySelectorAll('.carousel__indicators');
+
+indicatorsWrapper.forEach(dot => {
+    dot.addEventListener('click', (event) => {
+        if (event.target.classList.contains('carousel__indicator')) {
+            const index = event.target.dataset.index;
+            currentIndex = Number(index)
+            carouselScroll();
+        }
     })
 })

@@ -17,6 +17,16 @@
     --secondary-white: #DEDEDE;
     --alt-black: #303030;
     --purple: #6220C1;
+
+    /*
+    --screen-sm: 640px;
+    --screen-md: 768px;
+    --screen-lg: 1024px;
+    --screen-xl: 1280px;
+    --screen-2xl: 1536px;
+    --tablet: 768px;
+    --mobile: 480px;
+    */
 }
 
 .container {
@@ -30,65 +40,58 @@
     font-size: 14px;
 }
 
-.pBold {
+.text-bold {
     font-family: var(--font-nunito-sans);
     font-weight: 700;
     font-size: 14px;
-    line-height: 22px;
 }
 
-.pSemibold {
+.text-semibold {
     color: var(--black);
     font-family: var(--font-nunito-sans);
     font-weight: 600;
     font-size: 14px;
-    line-height: 14px;
+    line-height: 1;
 }
 
-.pRegular {
+.text-regular {
     color: var(--black);
     font-family: var(--font-nunito-sans);
     font-weight: 400;
     font-size: 14px;
-    line-height: 14px;
 }
 
-.h2BoldBanner {
+.h2-bold-banner {
     color: var(--black);
     font-family: var(--font-nunito);
     font-size: 30px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 140%; /* 42px */
     letter-spacing: 1.2px;
 }
 
-.pDescriptionBanner {
+.text-description {
     color: var(--black);
     font-family: var(--font-nunito);
     font-size: 18px;
-    line-height: 140%; /* 25.2px */
     letter-spacing: 0.9px;
 }
 
-.h3Normal {
+.h3-normal {
     font-family: var(--font-nunito-sans);
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
 }
 
-.spanStrikethrough {
+.text-strikethrough {
     color: var(--darkest-grey);
     font-family: var(--font-nunito-sans);
     font-size: 12px;
-    font-style: normal;
     font-weight: 400;
     text-decoration-line: line-through;
     text-transform: capitalize;
 }
 
-.h2Contact {
+.h2-contact {
     font-family: var(--font-nunito);
     color: var(--white);
     font-weight: 400;
@@ -96,38 +99,33 @@
     line-height: 140%; /* 42px */
 }
 
-.h4Bold {
+.h4-bold {
     color: var(--black);
     font-family: var(--font-nunito-sans);
     font-size: 16px;
-    font-style: normal;
     font-weight: 700;
 }
 
-.h2BoldTitle {
+.h2-bold-title {
     color: var(--black);
     font-family: var(--font-nunito-sans);
     font-size: 20px;
-    font-style: normal;
     font-weight: 700;
 }
 
-.spanLabel {
+.text-label {
     color: var(--white);
     font-family: var(--font-nunito-sans);
     font-size: 10px;
-    font-style: normal;
     font-weight: 700;
     line-height: 10px;
-    text-transform: uppercase;
 }
 
-.newsletter__title {
+.h2-bold-newsletter {
     color: var(--black);
     font-family: var(--font-nunito-sans);
     font-weight: 700;
     font-size: 20px;
-    letter-spacing: 0px;
     text-align: center;
 }
 
@@ -158,5 +156,33 @@
     font-family: var(--font-nunito-sans);
     font-size: 12px;
     font-weight: 400;
-    line-height: 20px;
+}
+
+@media (max-width: 1024px) {
+    .h2-bold-banner {
+        font-size: 24px;
+    }
+
+    .text-description {
+        font-size: 14px;
+    }
+
+    .h2-contact {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 480px) {
+    .h3-normal {
+        font-size: 12px;
+    }
+
+    .text-description {
+        font-size: 12px;
+    }
+
+    .h2-bold-newsletter {
+        font-size: 16px;
+    }
 }
