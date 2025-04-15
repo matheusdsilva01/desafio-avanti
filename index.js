@@ -1,5 +1,14 @@
 const departments = document.querySelectorAll('.department__item[data-department]');
-departments.forEach(department => {
+var dropdownOpen = false
+const dropdownCloseBtnImg = document.querySelector('.dropdown__close--button--img');
+
+departments.forEach((department, index) => {
+    if (index === 0 && window.innerWidth >= 1279) {
+        const departmentId = department.dataset.department;
+        const category = document.querySelector(`.dropdown__categories-list[data-department="${departmentId}"]`);
+        category.classList.toggle('dropdown__categories-list--active');
+    }
+
     department.addEventListener('click', event => {
         const departmentId = event.currentTarget.dataset.department;
  
@@ -11,12 +20,15 @@ departments.forEach(department => {
                     otherDepartment.classList.remove('department__item--active');
                 }
             })
+
             const departmentBtn = document.querySelector(`.department__item[data-department="${departmentId}"]`);
             if (departmentBtn) {
                 departmentBtn.classList.toggle('department__item--active');
             }
             if (category.dataset.department === departmentId) {
                 category.classList.toggle('dropdown__categories-list--active');
+                dropdownCloseBtnImg.setAttribute('src', 'assets/move-left.svg');
+                dropdownOpen = true;
             } else {
                 category.classList.remove('dropdown__categories-list--active');
             }
@@ -141,3 +153,23 @@ indicatorsWrapper.forEach(dot => {
         }
     })
 })
+
+/**
+    * @param {MouseEvent} event - The event object from the button click.
+*/
+function openSidebar(event) {
+    const categories = document.querySelector('.dropdown__content');
+    categories.classList.toggle('dropdown__content--active');
+}
+
+function closeSidebar(event) {
+    if (dropdownOpen) {
+        const categoryOpen = document.querySelector('.dropdown__categories-list--active');
+        categoryOpen.classList.remove('dropdown__categories-list--active')
+        dropdownCloseBtnImg.setAttribute('src', 'assets/close.svg');
+        dropdownOpen = false;
+        return
+    }
+    const categories = document.querySelector('.dropdown__content');
+    categories.classList.remove('dropdown__content--active');
+}
