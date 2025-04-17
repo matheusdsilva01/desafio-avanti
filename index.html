@@ -24,12 +24,12 @@
                 <img src="assets/logo.svg" alt="Logo Avanti Store"/>
             </div>
             <div class="header__content--search-bar">
-                <div class="header__content--wrapper-input">
+                <form class="header__content--wrapper-input" onsubmit="submitForm(event)">
                     <input class="header__content--input" type="text" name="search" id="search" placeholder="Digite aqui o que você procura">
                     <button type="submit" class="header__content--submit-button">
                         <img src="assets/search.svg" alt="Submit button" />
                     </button>
-                </div>
+                </form>
             </div>
             <div class="header__user">
                 <div class="header__user--info">
@@ -1192,6 +1192,7 @@
             </section>
         </section>
     </footer>
+    <div id="snackbar"></div>
     <script src="index.js"></script>
 </body>
 </html>

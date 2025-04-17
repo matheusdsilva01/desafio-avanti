@@ -1,3 +1,28 @@
+function showSnackbar() {
+    var snackbar = document.getElementById("snackbar");
+    snackbar.classList.add("show");
+    setTimeout(() => {
+        snackbar.classList.remove("show"); 
+    }, 3000);
+}
+
+/**
+ * @param {SubmitEvent} event 
+ */
+function submitForm(event) {
+    event.preventDefault();
+    const snackbar = document.querySelector('#snackbar')
+    const form = event.target
+    const inputValue = form.search.value;
+
+    if (!inputValue) {
+        snackbar.textContent = 'Preencha o campo de busca';
+    } else {
+        snackbar.textContent = `Você buscou por: '${inputValue}'`;
+    }
+    showSnackbar()
+}
+
 const departments = document.querySelectorAll('.department__item[data-department]');
 var dropdownOpen = false
 const dropdownCloseBtnImg = document.querySelector('.dropdown__close--button--img');
