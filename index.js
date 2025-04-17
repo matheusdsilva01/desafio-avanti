@@ -72,7 +72,7 @@ window.addEventListener('resize', () => {
     updateFooterColumnState()
     const carouselWrapper = document.querySelectorAll('.carousel__items');
     currentIndex = 0;
-    carouselIndex = Math.ceil((carouselWrapper[0].scrollWidth / carouselWrapper[0].clientWidth) / 2);
+    carouselIndex = Math.ceil(carouselWrapper[0].scrollWidth / carouselWrapper[0].clientWidth);
     const dotsWrapper = document.querySelectorAll('.carousel__indicators');
     dotsWrapper.forEach(dot => {
         dot.innerHTML = '';
@@ -154,15 +154,12 @@ indicatorsWrapper.forEach(dot => {
     })
 })
 
-/**
-    * @param {MouseEvent} event - The event object from the button click.
-*/
-function openSidebar(event) {
+function openSidebar() {
     const categories = document.querySelector('.dropdown__content');
     categories.classList.toggle('dropdown__content--active');
 }
 
-function closeSidebar(event) {
+function closeSidebar() {
     if (dropdownOpen) {
         const categoryOpen = document.querySelector('.dropdown__categories-list--active');
         categoryOpen.classList.remove('dropdown__categories-list--active')

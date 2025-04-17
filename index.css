@@ -764,7 +764,6 @@ footer {
     .banner__content {
         gap: 20px;
         padding: 0 25px;
-        column-gap: 0;
     }
     
     .banner__content--img {
