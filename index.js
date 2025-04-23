@@ -57,7 +57,7 @@ departments.forEach((department, index) => {
             // Adiciona a classe de ativo na categoria correspondente
             if (category.dataset.department === departmentId) {
                 category.classList.toggle('dropdown__categories-list--active')
-                dropdownCloseBtnImg.setAttribute('src', 'assets/move-left.svg')
+                dropdownCloseBtnImg.setAttribute('src', 'assets/icons/move-left.svg')
                 dropdownOpen = true
             } else {
                 category.classList.remove('dropdown__categories-list--active')
@@ -197,7 +197,7 @@ function closeSidebar() {
     if (dropdownOpen) {
         const categoryOpen = document.querySelector('.dropdown__categories-list--active')
         categoryOpen.classList.remove('dropdown__categories-list--active')
-        dropdownCloseBtnImg.setAttribute('src', 'assets/close.svg')
+        dropdownCloseBtnImg.setAttribute('src', 'assets/icons/close.svg')
         dropdownOpen = false
         return
     }
