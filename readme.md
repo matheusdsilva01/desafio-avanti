@@ -11,6 +11,8 @@
 
 ```
 desafio-avanti
+├── assets
+│   ├── Contém sub-pastas com imagens e ícones utilizados no projeto
 ├── index.html
 │   ├── Estrutura HTML da página
 ├── reset.css
