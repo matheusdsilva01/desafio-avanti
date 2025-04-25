@@ -150,11 +150,9 @@ header {
     p {
         cursor: pointer;
     }
-    &:hover {
-        >p, .header__nav--sidebar-button {
-            transition: all 0.3s ease-in-out;
-            color: var(--blue);
-        }
+    &:hover >p, &:hover .header__nav--sidebar-button {
+        transition: all 0.3s ease-in-out;
+        color: var(--blue);
     }
 }
 
@@ -175,6 +173,10 @@ header {
     display: flex;
     max-height: 329px;
     padding: 18px 0 0;
+}
+
+.dropdown:not(.header__nav--toggle-categories) .dropdown__wrapper {
+    padding-top: 35px;
 }
 
 .dropdown__departments {
@@ -229,7 +231,7 @@ header {
     left: 0;
     top: 100%;
     margin-top: -18px;
-    padding: 38px 16px 11px;
+    padding: 0px 16px 11px;
     width: 100%;
     background-color: var(--white);
     display: none;
