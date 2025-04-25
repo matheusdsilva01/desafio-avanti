@@ -1,6 +1,8 @@
 # Avanti Store
 ##### Este é um projeto desenvolvido para o desafio técnico Frontend, foi desenvolvido um layout, seguindo o design fornecido, usando HTML, CSS e JavaScript.
 
+Você pode visualizar o projeto [aqui](https://matheusdsilva01.github.io/desafio-avanti/) ou visitando o link: https://matheusdsilva01.github.io/desafio-avanti/.
+
 ## Projeto desenvolvido utilizando as seguintes tecnologias
   - `HTML`
   - `CSS` Escrito em CSS puro, utilizando a metodologia BEM (Block Element Modifier) e Utility First para organização e clareza na estruturação dos estilos.
