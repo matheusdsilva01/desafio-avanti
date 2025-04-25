@@ -165,18 +165,16 @@ header {
     }
 }
 
-.dropdown {
-    cursor: pointer;
-}
-
 .dropdown__wrapper {
     display: flex;
-    max-height: 329px;
-    padding: 18px 0 0;
+    max-height: 332px;
+    padding-top: 18px;
+    padding-right: 16px;
 }
 
 .dropdown:not(.header__nav--toggle-categories) .dropdown__wrapper {
     padding-top: 35px;
+    padding-right: 0;
 }
 
 .dropdown__departments {
@@ -203,10 +201,9 @@ header {
 
 .header__nav--toggle-categories .dropdown__content {
     padding: 0;
-    max-height: 329px;
+    max-height: 332px;
     width: 100%;
 }
-
 
 .header__nav--toggle-categories .dropdown__categories-list {
     display: none;
@@ -256,6 +253,60 @@ header {
 
 .dropdown__categories-list:first {
     display: grid;
+}
+
+.dropdown__banner--wrapper {
+    margin-left: auto;
+    position: relative;
+    max-width: 236px;
+    width: 100%;
+    height: 298px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: linear-gradient(to right, #00000000 -20.45%, #000000bf 138.31%);
+}
+
+.dropdown__banner--img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.dropdown__banner--info {
+    position: absolute;
+    top: 50%;
+    left: 27px;
+    transform: translateY(-50%);
+    color: var(--white);
+    max-width: 127px;
+    width: 100%;
+}
+
+.dropdown__banner--text {
+    font-family: var(--font-nunito-sans);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+}
+
+.dropdown__banner--strong {
+    font-weight: 700;
+}
+
+.dropdown__banner--btn {
+    background-color: transparent;
+    border: 1px solid var(--white);
+    border-radius: 10px;
+    max-width: 116px;
+    width: 100%;
+    margin-top: 40px;
+    cursor: pointer;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 12px;
+    padding: 10px 0;
 }
 
 .dropdown__item {
@@ -741,7 +792,11 @@ footer {
     .header__nav--item:not(.header__nav--toggle-categories) {
         display: none;
     }
-    
+
+    .dropdown__banner--wrapper {
+        display: none;
+    }
+
     .header__content--search-bar {
         order: 4;
         width: 100%;
