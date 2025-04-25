@@ -296,6 +296,7 @@ header {
 }
 
 .dropdown__banner--btn {
+    font-family: var(--font-heebo);
     background-color: transparent;
     border: 1px solid var(--white);
     border-radius: 10px;
